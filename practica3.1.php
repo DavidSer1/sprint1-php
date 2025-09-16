@@ -1,14 +1,13 @@
-<?php 
-echo "hool";
-function mostar_impares(){
-    $frase = "A quien madruga Dios
-le ayuda";
-    $array_frase = explode(" ", $frase);
-    foreach($array_frase as $palabra){
-        if(strlen($palabra) % 2 != 0){
-            echo $palabra . "<br>";
-        }
+
+<?php
+
+function mostrar_impares($cadena1){
+    $cadena1 = "A quien madruga Dios le ayuda";
+    for($i = 0; $i < strlen($cadena1); $i+=2){ 
+       echo substr($cadena1, $i, 1) . "<br>";
     }
 }
+mostrar_impares($cadena1);
+
 
 ?>
