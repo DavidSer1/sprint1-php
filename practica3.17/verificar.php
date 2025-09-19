@@ -2,6 +2,8 @@
 include "usuarios.php";
 $archivo = fopen("acceso.txt", "a");
 
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario =  trim($_POST["usuario"]);  
     $contra  = $_POST["contra"] ?? '';
@@ -14,7 +16,7 @@ echo "Todos los campos son obligatorios";
     foreach ($usuarios as $nombre => $password) {
         if ($usuario === $nombre && $contra === $password) {
           
-    /* fwrite($archivo, date("Y-m-d H:i:s") . " Usuario i contraseña incorrectes" . $usuario); */
+          
            header("Location: ok.php");
         }
         else{
