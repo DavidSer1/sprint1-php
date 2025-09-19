@@ -13,6 +13,13 @@
 <input type="password" name="contra" id="contra">
 <button type="submit">Enviar</button>
     </form>
+
+<?php
+if (isset($_GET['mensaje'])){
+    echo $_GET['mensaje'];
+    
+}
+?>
     
 </body>
 </html>

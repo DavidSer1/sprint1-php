@@ -1,6 +1,8 @@
 <?php
 // Array que contiene parejas de datos usuario-contraseña
-$usuarios = array("Juan" => "draco",
-"Luisa" => "baobab",
-"Antonio" => "olmo");
+$usuarios =[
+    "Juan" => "draco",
+    "Luisa" => "baobab",
+    "Antonio" => "olmo"
+];
 ?>
